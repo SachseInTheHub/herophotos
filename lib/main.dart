@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
       title: 'Pick a Hero',
       theme: ThemeData(
         primarySwatch: Colors.green,
+        scaffoldBackgroundColor: Colors.black,
       ),
       home: MyHomePage(
         header: 'Pick a Hero',
@@ -42,10 +43,11 @@ class _MyHomePageState extends State<MyHomePage> {
   List<String> _links = [
     "https://cdn3.whatculture.com/images/2014/04/SuperiorSpiderMan_02.png",
     "https://static.comicvine.com/uploads/original/9/96648/2834291-1265093_130_ultimate_comics_new_ultimates_4.jpg",
-    "https://cdn3.whatculture.com/images/2014/04/SuperiorSpiderMan_02.png",
-    "https://static.comicvine.com/uploads/original/9/96648/2834291-1265093_130_ultimate_comics_new_ultimates_4.jpg",
-    "https://cdn3.whatculture.com/images/2014/04/SuperiorSpiderMan_02.png",
-    "https://static.comicvine.com/uploads/original/9/96648/2834291-1265093_130_ultimate_comics_new_ultimates_4.jpg",
+    "http://www.popculart.com/uploads/1/0/5/7/105745419/hulk-6_orig.jpg",
+    "https://cdn.flickeringmyth.com/wp-content/uploads/2018/06/Deadpool-1-coverNotFinal.png",
+    "https://static3.srcdn.com/wordpress/wp-content/uploads/2018/08/Daredevil-sense.jpg",
+    "https://static.comicvine.com/uploads/original/11118/111183611/5193180-tumblr_nyxu5mbe891sbqrlmo1_1280.jpg",
+    "https://i.kinja-img.com/gawker-media/image/upload/s--EcFIUboD--/c_scale,f_auto,fl_progressive,q_80,w_800/18mg4fh2v8emrjpg.jpg"
   ];
 
   String heroOrVilan(int i) {
@@ -67,8 +69,8 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.header),
         ),
         body: Center(
-            child: ListView(
-              children: _links.map((url) => Image.network(url)).toList())));
+            child: ListView(padding: EdgeInsets.all(8.0),
+              children: _links.map((url) => Image.network(url, height: 200,fit: BoxFit.fitWidth)  ).toList())));
             // child: ListView(children: <Widget>[Image.network(widget.url)])));
   }
 }
