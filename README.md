@@ -1,10 +1,10 @@
-# pick_a_hero 🦸‍♂️
+# 🦸‍♀️ pick_a_hero 🦸‍♂️
 
 This application build using Flutter will allow to display two apps for iOS and Android from the same code base.
 
 ## What does it do
 
-Lst heroes from a local data source and let you navigate to a detail page of each one where you'll be able to see a picture profile and origin story.
+List heroes from a local data source and let you navigate to a detail page of each one where you'll be able to see a picture profile and origin story.
 
 ## Flutter workshop material 📒
 
