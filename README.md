@@ -1,7 +1,18 @@
 # pick_a_hero 🦸‍♂️
 
-workshop material 📒
+This application build using Flutter will allow to display two apps for iOS and Android from the same code base.
 
-## Getting Started
+## What does it do
 
-This project is a simple starting point for flutter workshop
+Lst heroes from a local data source and let you navigate to a detail page of each one where you'll be able to see a picture profile and origin story.
+
+## Flutter workshop material 📒
+
+You need:
+ - [Flutter](https://flutter.dev)
+ - [Android SDK](https://developer.android.com/studio)
+ - [iOS SDK](https://developer.apple.com/ios/)
+ 
+
+
+
